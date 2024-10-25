@@ -1,40 +1,30 @@
-# Credit Card Data Analysis
+# Credit Card Statement Analysis
 
-This project is for analyzing and categorizing credit card transactions extracted from PDF files. Using Python, it processes multiple PDF statements, extracts transaction details, and organizes them for further analysis.
+## Project Overview
 
-## Project Structure
+This project is designed to parse, clean, and analyze monthly credit card statements using Python. The primary goals include extracting transaction information, categorizing spending patterns, and preparing the data for further analysis.
 
-- `data/`: Contains the raw PDF files with credit card statements.
-- `scripts/`: Holds the Python scripts for data extraction and preprocessing.
-- `notebooks/`: Jupyter notebooks for interactive data exploration and visualization.
-- `output/`: Contains processed data files and results.
+The original transaction data was extracted from monthly PDF statements provided by **TD Bank**. While this project is tailored for the TD Bank statement format, similar techniques may work for statements from other banks with modifications.
 
-## Installation
+> **Note:** To protect sensitive information, the credit card statement PDF files themselves are not included in this repository. Instead, a cleaned and processed version of the data is provided in CSV format. This file contains the extracted transaction data necessary for analysis.
 
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/yourusername/Credit-Card-Data-Analysis.git
-   ```
-2. Navigate to the project directory:
-   ```bash
-   cd Credit-Card-Data-Analysis
-   ```
-3. Install required packages:
-   ```bash
-   pip install -r requirements.txt
-   ```
+## Files
+
+- `data/transactions.csv`: Contains the cleaned and structured data extracted from the TD Bank statements.
+- `scripts/`: Python scripts used for data extraction, parsing, and analysis.
+- `LICENSE`: This project is licensed under the MIT License.
+
+## Prerequisites
+
+- Python 3.8 or higher
+- Libraries: `pdfplumber`, `pandas`, `re`
 
 ## Usage
 
-1. Place your PDF files in the `data/` directory.
-2. Run the `extract_data.py` script to process and parse the files.
-
-## Roadmap
-
-- [ ] Add code for categorizing transactions
-- [ ] Implement data visualization for transaction insights
-- [ ] Build a web-based user interface (future plan)
+1. **Data Extraction**: The provided scripts demonstrate how to use `pdfplumber` to parse credit card statements.
+2. **Data Processing**: Additional steps clean the data and save it as a CSV file for analysis.
+3. **Data Analysis**: You can analyze the CSV file directly for insights into spending patterns, budgets, and other transaction-related metrics.
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
