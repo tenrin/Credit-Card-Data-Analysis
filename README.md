@@ -1,7 +1,3 @@
-# Credit-Card-Data-Analysis
-A project for analyzing and categorizing credit card transactions using Python
-
-
 # Credit Card Data Analysis
 
 This project is for analyzing and categorizing credit card transactions extracted from PDF files. Using Python, it processes multiple PDF statements, extracts transaction details, and organizes them for further analysis.
